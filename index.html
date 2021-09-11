@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="./img/IMG_20210827_123113.jpg" alt="" height="200" width="267">
+            <div class="name"><h1>Anton Tsiatska</h1>
+                <h3>Javascript/front end developer</h3>
+                <nav>
+                    
+                </nav>
+            </div>
+            
+        </header>
+        <main>
+            <section>
+                <h2>About me:</h2>
+                <p>My name is Anton, I am 37 years old, I live in Ukraine in the village Pesochin, Kharkiv region. I am married and have two children. Currently I work as a doctor of ultrasound diagnostics and a surgeon. In 2007 graduated from Kharkov State Medical University. Since my school days I wanted to become a programmer, at school I made simple websites in html, css and php. But life turned out so that I went on to study to be a doctor. In medicine I achieved great success, but still the thought of doing programming did not leave me all these years, and I decided to leave medicine and do the business that I had dreamed of since my school days. And I made up my mind). I am currently learning html, css, javascript, react. At first, I studied independently using books and materials from the Internet, now I study remotely at the courses “javascript / front end” at the “RS school”. It takes almost all my free time after work and even more, but it brings a lot of pleasure and feeling that I am getting closer and closer to my goal and dream! I have the desire, ability and motivation to move on in this direction!</p>
+            </section>
+            <div class="section">
+                <section>
+                    <h2>Skills:</h2>
+                    <ul>
+                        <li>HTML,</li>
+                        <li>CSS,</li>
+                        <li>JavaScript,</li>
+                        <li>Git,</li>
+                        <li>React</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Courses:</h2>
+                    <ul>
+                        <li>https://htmlacademy.ru,</li>
+                        <li>https://htmlbook.ru/samcss</li>
+                        <li>https://learn.javascript.ru/</li>
+                        <li>https://www.udemy.com/</li>
+                        <li>RS School</li>
+                    </ul>
+
+                </section>
+                <section>
+                    <h2>Languages:</h2>
+                    <ul>
+                        <li>Russian (native),</li>
+                        <li>Ukrainian (upper-intermediate),</li>
+                        <li>English (pre-intermediate).</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="section p2">
+                <section>
+                    <h2>Code example:</h2>
+                    <pre>
+                        <code>
+    function nicknameGenerator(name){
+        if(name.length<4) {return "Error: Name too short";}
+        const massiveOfVowels = ["a","e","i","o","u"];
+        let isConsonat = true;
+        for (let index in massiveOfVowels) {
+            if(name[2] == massiveOfVowels[index]) {
+            isConsonat = false;
+            }
+        }
+        if(isConsonat===true) {
+            return name.slice(0,3);
+        } else {
+            return name.slice(0,4);
+        }
+    }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <div class="contact-info">
+                        <h2>Contact information:</h2>
+                        <ul>
+                            <li>email: tosya@ua.fm;</li>
+                            <li>tel: +380506735712;</li>
+                            <li>telegram: @tosya_1984. </li>
+                        </ul>
+                </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <a href="https://github.com/tosya1984" target="_blank"><img src="./img/github.png" alt="github" height="100" width="100"></a>
+            <a href="https://rs.school/" target="_blank"><img src="./img/rs_school_js.svg" alt="RS_school" height="100"></a>
+            <div>Страница создана в сентябре 2021 года</div>
+        </footer>
+    </div>
+</body>
+</html>
