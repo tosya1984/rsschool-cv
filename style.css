@@ -35,10 +35,12 @@ div.p2 {
 div.contact-info {
     border: 2px solid red;
     justify-self: flex-end;
+    padding: 20px;
     
 }
 footer {
     width: 100%;
     min-height: 40px;
     border: 1px dotted black;
+    text-align: right;
 }
