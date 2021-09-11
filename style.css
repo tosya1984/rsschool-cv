@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+.wrapper {
+    width: 70%;
+    background-color: white;
+    height: 600px;
+    margin: 20px auto;
+    padding: 40px 70px;
+}
+header {
+    display: flex;
+}
+.name {
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+}
