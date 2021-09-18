@@ -9,91 +9,92 @@
 <body>
     <div class="wrapper">
         <header>
-            <img src="./img/IMG_20210827_123113.jpg" alt="" height="200" width="267">
-            <div class="name"><h1>Anton Tsiatska</h1>
-                <h3>Javascript/front end developer</h3>
+            <div class="logo">
+                <img src="./img/IMG_20210827_123113.jpg" alt="фото" height="200" width="267" id="logo">
+            </div>
+            <div class="name">
+                <h1>Anton Tsiatska</h1>
+                <h3>Javascript/front end developer</h3><br>
                 <nav>
-                    
+                    <a href="#contact" class="menu">Contacts</a> |
+                    <a href="#about" class="menu">About</a> |
+                    <a href="#skills" class="menu">Skills</a> |
+                    <a href="#code" class="menu">Code</a> |
+                    <a href="#courses" class="menu">Courses</a> |
+                    <a href="#languages" class="menu">Languages</a>
+                        
                 </nav>
             </div>
-            
+
         </header>
         <main>
-            <section>
+            <section id="contact">
+                <h2>Contact information:</h2>
+                <ul>
+                    <li><h4>email: <span>tosya@ua.fm;</span></h4></li>
+                    <li><h4>tel: <span>+380506735712;</span></h4></li>
+                    <li><h4>telegram: <span>@tosya_1984.</span></h4></li>
+                </ul>
+            </section>
+            <section id="about">
                 <h2>About me:</h2>
                 <p>My name is Anton, I am 37 years old, I live in Ukraine in the village Pesochin, Kharkiv region. I am married and have two children. Currently I work as a doctor of ultrasound diagnostics and a surgeon. In 2007 graduated from Kharkov State Medical University. Since my school days I wanted to become a programmer, at school I made simple websites in html, css and php. But life turned out so that I went on to study to be a doctor. In medicine I achieved great success, but still the thought of doing programming did not leave me all these years, and I decided to leave medicine and do the business that I had dreamed of since my school days. And I made up my mind). I am currently learning html, css, javascript, react. At first, I studied independently using books and materials from the Internet, now I study remotely at the courses “javascript / front end” at the “RS school”. It takes almost all my free time after work and even more, but it brings a lot of pleasure and feeling that I am getting closer and closer to my goal and dream! I have the desire, ability and motivation to move on in this direction!</p>
             </section>
-            <div class="section">
-                <section>
-                    <h2>Skills:</h2>
-                    <ul>
-                        <li>HTML,</li>
-                        <li>CSS,</li>
-                        <li>JavaScript,</li>
-                        <li>Git,</li>
-                        <li>React</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Courses:</h2>
-                    <ul>
-                        <li>https://htmlacademy.ru,</li>
-                        <li>https://htmlbook.ru/samcss</li>
-                        <li>https://learn.javascript.ru/</li>
-                        <li>https://www.udemy.com/</li>
-                        <li>RS School</li>
-                    </ul>
+            <section id="skills">
+                <h2>Skills:</h2>
+                <ul>
+                    <li><h5>HTML,</h5></li>
+                    <li><h5>CSS,</h5></li>
+                    <li><h5>JavaScript,</h5></li>
+                    <li><h5>Git,</h5></li>
+                    <li><h5>React</h5></li>
+                </ul>
+            </section>
+            <section id="code">
+                <h2>Code example:</h2>
+                <pre>
+                    <code>
+const l = [1,2,3,"qwerty","qaz",10];
 
-                </section>
-                <section>
-                    <h2>Languages:</h2>
-                    <ul>
-                        <li>Russian (native),</li>
-                        <li>Ukrainian (upper-intermediate),</li>
-                        <li>English (pre-intermediate).</li>
-                    </ul>
-                </section>
-            </div>
-            <div class="section p2">
-                <section>
-                    <h2>Code example:</h2>
-                    <pre>
-                        <code>
-    function nicknameGenerator(name){
-        if(name.length<4) {return "Error: Name too short";}
-        const massiveOfVowels = ["a","e","i","o","u"];
-        let isConsonat = true;
-        for (let index in massiveOfVowels) {
-            if(name[2] == massiveOfVowels[index]) {
-            isConsonat = false;
-            }
-        }
-        if(isConsonat===true) {
-            return name.slice(0,3);
-        } else {
-            return name.slice(0,4);
-        }
-    }
-                        </code>
-                    </pre>
-                </section>
-                <section>
-                    <div class="contact-info">
-                        <h2>Contact information:</h2>
-                        <ul>
-                            <li><b>email: tosya@ua.fm;</b></li>
-                            <li><b>tel: +380506735712;</b></li>
-                            <li><b>telegram: @tosya_1984.</b></li>
-                        </ul>
-                </div>
-                </section>
-            </div>
+function filter_list(massive) {
+    let result = [];
+    for(let key in massive) {
+        if (typeof(massive[key]) == "number") {
+            result.push(massive[key]);
+        };
+    };
+    return result;
+}
+const result = filter_list(l);
+console.log(result);
+                    </code>
+                </pre>
+            </section>
+            <section id="courses">
+            <h2>Courses:</h2>
+            <ul>
+                <li><h6>https://htmlacademy.ru,</h6></li>
+                <li><h6>https://htmlbook.ru/samcss</h6></li>
+                <li><h6>https://learn.javascript.ru/</h6></li>
+                <li><h6>https://www.udemy.com/</h6></li>
+                <li><h6>RS School</h6></li>
+            </ul>
+            </section>
+            <section id="languages">
+                <h2>Languages:</h2>
+                <ul>
+                    <li>Russian (native),</li>
+                    <li>Ukrainian (upper-intermediate),</li>
+                    <li>English (pre-intermediate).</li>
+                </ul>
+            </section>
         </main>
         <footer>
-            <a href="https://github.com/tosya1984" target="_blank"><img src="./img/github.png" alt="github" height="100" width="100"></a>
-            <a href="https://rs.school/" target="_blank"><img src="./img/rs_school_js.svg" alt="RS_school" height="100"></a>
+            <a href="https://github.com/tosya1984" target="_blank"><img src="./img/github.png" alt="github" height="30" width="30"></a>
+            <a href="https://rs.school/" target="_blank"><img src="./img/rs_school_js.svg" alt="RS_school" height="30"></a>
             <div>Страница создана в сентябре 2021 года</div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
